@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="genero.dexterous.com.almanac.graph.GraphActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Analysis is done by search.\n It help you to take precautions."
+        android:paddingTop="5dp"
+        android:background="#3f51b5"
+        android:gravity="center"
+        android:id="@+id/helloworld"
+        android:textColor="#FFFFFF"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_below="@+id/helloworld"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:background="@drawable/back"
+        android:orientation="vertical">
+    </LinearLayout>
+
+
+    <ListView
+        android:layout_below="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:paddingRight="2dp"
+        android:background="#ffffff"
+        android:paddingLeft="2dp"
+        android:dividerHeight="3dp"
+        android:id="@+id/graphList"
+         />
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/graphProgressBar"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

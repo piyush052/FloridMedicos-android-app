@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+
+    >
+    <LinearLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+       android:padding="6dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:text="Give the prescription to patient "
+                android:textSize="18dp"
+                android:textColor="#000000"
+
+
+                android:background="@drawable/box"
+                android:paddingLeft="60dp"
+                />
+
+            <EditText
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="@drawable/box"
+                android:paddingLeft="60dp"
+                android:hint="@string/patientEmail"
+                android:id="@+id/prefToMail"
+
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+
+            >
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="6"
+
+                android:background="@drawable/box"
+                android:paddingLeft="60dp"
+                android:gravity="top"
+                android:hint="@string/type_here"
+                android:id="@+id/prefEdit">
+                <requestFocus />
+
+            </EditText>
+
+
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:text="@string/time"
+                android:background="@drawable/box"
+                android:paddingLeft="60dp"
+                android:textColor="#000000"
+                android:textSize="18dp"
+
+                />
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:lines="1"
+                android:maxLines="1"
+                android:maxLength="2"
+                android:phoneNumber="true"
+                android:numeric="integer"
+
+
+                android:inputType="number"
+                android:background="@drawable/box"
+                android:paddingLeft="60dp"
+                android:hint="@string/medTime"
+                android:id="@+id/time1"
+                >
+                <requestFocus />
+
+            </EditText>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:lines="1"
+                android:maxLength="2"
+
+                android:phoneNumber="true"
+                android:numeric="integer"
+
+
+                android:background="@drawable/box"
+                android:paddingLeft="60dp"
+                android:inputType="number"
+                android:maxLines="1"
+                android:hint="Example 12:00"
+                android:id="@+id/time2"
+
+                >
+                <requestFocus />
+
+            </EditText>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:lines="1"
+                android:inputType="number"
+                android:maxLength="2"
+
+                android:numeric="integer"
+
+                android:maxLines="1"
+                android:background="@drawable/box"
+                android:paddingLeft="60dp"
+                android:hint="Example 19:00"
+                android:phoneNumber="true"
+
+                android:id="@+id/time3"
+
+                >
+                <requestFocus />
+
+            </EditText>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="15dp"
+            >
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/sendPref"
+                android:gravity="center"
+                android:text="@string/send"
+                android:background="@drawable/round_button"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<ScrollView-->
+<!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:background="@drawable/back"-->
+
+    <!--&gt;-->
+<!--<LinearLayout-->
+
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:padding="6dp"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical">-->
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:layout_below="@+id/card_view2"-->
+
+        <!--card_view:cardCornerRadius="2dp"-->
+        <!--card_view:contentPadding="10dp">-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:text="Give the prescription to patient "-->
+            <!--android:textSize="18dp"-->
+            <!--android:textColor="#000000"-->
+
+            <!--android:gravity="center"-->
+            <!--/>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:layout_below="@+id/card_view2"-->
+
+        <!--card_view:cardCornerRadius="2dp"-->
+        <!--card_view:contentPadding="10dp">-->
+
+        <!--<EditText-->
+            <!--android:layout_marginTop="5dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:background="@drawable/box"-->
+            <!--android:paddingLeft="60dp"-->
+            <!--android:hint="@string/patientEmail"-->
+            <!--android:id="@+id/prefToMail"-->
+
+            <!--/>-->
+    <!--</android.support.v7.widget.CardView>-->
+
+
+
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:layout_below="@+id/card_view2"-->
+
+        <!--card_view:cardCornerRadius="2dp"-->
+        <!--card_view:contentPadding="10dp">-->
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:lines="6"-->
+
+            <!--android:background="@drawable/box"-->
+            <!--android:paddingLeft="60dp"-->
+            <!--android:gravity="top"-->
+            <!--android:hint="@string/type_here"-->
+            <!--android:id="@+id/prefEdit">-->
+            <!--<requestFocus />-->
+
+        <!--</EditText>-->
+
+
+
+
+
+    <!--</android.support.v7.widget.CardView>-->
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+        <!--android:id="@+id/card_view3"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:layout_below="@+id/card_view2"-->
+
+        <!--card_view:cardCornerRadius="2dp"-->
+        <!--card_view:contentPadding="10dp">-->
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="72dp"-->
+            <!--android:text="@string/time"-->
+            <!--android:gravity="center"-->
+            <!--android:textColor="#000000"-->
+            <!--android:textSize="18dp"-->
+
+            <!--/>-->
+
+
+
+
+    <!--</android.support.v7.widget.CardView>-->
+
+    <!--<android.support.v7.widget.CardView-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:layout_below="@+id/card_view2"-->
+
+        <!--card_view:cardCornerRadius="2dp"-->
+        <!--card_view:contentPadding="10dp">-->
+
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:lines="1"-->
+            <!--android:maxLines="1"-->
+            <!--android:maxLength="2"-->
+            <!--android:phoneNumber="true"-->
+            <!--android:numeric="integer"-->
+
+
+            <!--android:inputType="number"-->
+            <!--android:background="@drawable/box"-->
+            <!--android:paddingLeft="60dp"-->
+            <!--android:hint="@string/medTime"-->
+            <!--android:id="@+id/time1"-->
+            <!--&gt;-->
+            <!--<requestFocus />-->
+
+        <!--</EditText>-->
+
+
+    <!--</android.support.v7.widget.CardView>-->
+    <!--<android.support.v7.widget.CardView-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:layout_below="@+id/card_view2"-->
+
+        <!--card_view:cardCornerRadius="2dp"-->
+        <!--card_view:contentPadding="10dp">-->
+
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:lines="1"-->
+            <!--android:maxLength="2"-->
+
+            <!--android:phoneNumber="true"-->
+            <!--android:numeric="integer"-->
+
+
+            <!--android:background="@drawable/box"-->
+            <!--android:paddingLeft="60dp"-->
+            <!--android:inputType="number"-->
+            <!--android:maxLines="1"-->
+            <!--android:hint="Example 12:00"-->
+            <!--android:id="@+id/time2"-->
+
+            <!--&gt;-->
+            <!--<requestFocus />-->
+
+        <!--</EditText>-->
+
+
+
+    <!--</android.support.v7.widget.CardView>-->
+    <!--<android.support.v7.widget.CardView-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:card_view="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="5dp"-->
+        <!--android:layout_below="@+id/card_view2"-->
+
+        <!--card_view:cardCornerRadius="2dp"-->
+        <!--card_view:contentPadding="10dp">-->
+
+
+        <!--<EditText-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="35dp"-->
+            <!--android:lines="1"-->
+            <!--android:inputType="number"-->
+            <!--android:maxLength="2"-->
+
+            <!--android:numeric="integer"-->
+
+            <!--android:maxLines="1"-->
+            <!--android:background="@drawable/box"-->
+            <!--android:paddingLeft="60dp"-->
+            <!--android:hint="Example 19:00"-->
+            <!--android:phoneNumber="true"-->
+
+            <!--android:id="@+id/time3"-->
+
+            <!--&gt;-->
+            <!--<requestFocus />-->
+
+        <!--</EditText>-->
+
+
+
+
+    <!--</android.support.v7.widget.CardView>-->
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--&gt;-->
+        <!--<Button-->
+            <!--android:layout_width="200dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/sendPref"-->
+            <!--android:gravity="center"-->
+            <!--android:text="@string/send"-->
+            <!--android:background="@drawable/round_button"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+<!--</LinearLayout>-->
+
+<!--</ScrollView>-->

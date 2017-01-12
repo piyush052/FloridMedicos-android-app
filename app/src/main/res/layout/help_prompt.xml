@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_rootal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/backp"
+    android:gravity="center"
+
+    android:padding="10dp" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your details: "
+        android:gravity="left"
+        android:paddingLeft="15dp"
+        android:paddingBottom="10dp"
+        android:textColor="#000000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/helpDocEmail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+
+        android:background="@drawable/box"
+        android:paddingLeft="60dp"
+
+        android:hint="email">
+
+        <requestFocus />
+
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:lines="6"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box"
+        android:paddingLeft="60dp"
+        android:gravity="top"
+        android:hint="Write your address, degree and other details here."
+        android:id="@+id/docEditHelp">
+        <requestFocus />
+
+    </EditText>
+
+</LinearLayout>

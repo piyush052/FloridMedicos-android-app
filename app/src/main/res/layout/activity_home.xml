@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeActivity"
+    android:orientation="horizontal"
+    android:background="#ffffff"
+   >
+
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_margin="3dp"
+        card_view:cardCornerRadius="2dp"
+        >
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+        android:gravity="center"
+
+        android:id="@+id/realtive"
+        android:orientation="horizontal">
+
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        custom:auto_cycle="true"
+        android:gravity="center"
+        custom:indicator_visibility="visible"
+        custom:pager_animation="Accordion"
+        custom:pager_animation_span="1100" />
+
+    <com.daimajia.slider.library.Indicators.PagerIndicator
+        android:id="@+id/custom_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        custom:selected_color="#0095BF"
+        custom:selected_drawable="@drawable/bloodbank"
+        custom:selected_height="6dp"
+        custom:selected_padding_left="5dp"
+        custom:selected_padding_right="5dp"
+        custom:selected_width="6dp"
+        custom:shape="oval"
+        custom:unselected_color="#55333333"
+        custom:unselected_height="6dp"
+        custom:unselected_padding_left="5dp"
+        custom:unselected_padding_right="5dp"
+        custom:unselected_width="6dp" />
+
+    <com.daimajia.slider.library.Indicators.PagerIndicator
+        android:id="@+id/custom_indicator2"
+        style="@style/AndroidImageSlider_Corner_Oval_Orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <GridView
+
+        android:layout_marginTop="202dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/gridView"
+        android:numColumns="2"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:paddingTop="3dp"
+        android:verticalSpacing="2dp"
+        android:horizontalSpacing="2dp"
+
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,76 @@
+
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    android:background="@drawable/back"
+
+
+    tools:context="genero.dexterous.com.almanac.doctor.DoctorActivity"
+
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="25dp"
+         android:visibility="gone"
+        android:background="@drawable/ring"
+        android:src="@drawable/doctor_assistant"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:paddingLeft="15dp"
+        android:paddingBottom="5dp"
+        android:textSize="18dp"
+        android:id="@+id/textView2"
+        android:textColor="#000000"
+
+        />
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/drop_arrow"
+        android:id="@+id/spinner"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+
+        android:textAppearance="@android:color/black"
+        android:textStyle="bold"
+        android:popupBackground="#d3d3d3"/>
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:id="@+id/editText"
+        android:imeOptions="actionSearch"
+        android:layout_marginTop="28dp"
+        android:hint="Enter pincode"
+        android:phoneNumber="true"
+        android:numeric="integer"
+        android:textAppearance="@android:color/black"
+        android:gravity="center"
+
+        android:background="@drawable/round_button"
+        android:singleLine="false"
+        android:textSize="15dp"
+        android:maxLength="6"
+
+         />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/button"
+        android:background="@drawable/round_button"
+        android:layout_marginTop="28dp" />
+
+</LinearLayout>

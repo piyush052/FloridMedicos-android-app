@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="6dp"
+    android:background="@drawable/back"
+    android:gravity="center"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="genero.dexterous.com.almanac.doctor.PrescriptionForUser">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/presList"
+        android:paddingLeft="60dp"
+        android:background="@drawable/box"
+        android:gravity="center"
+        android:layout_alignTop="@+id/progressBarPresc"
+        android:layout_centerHorizontal="true">
+    </TextView>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBarPresc"
+
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
